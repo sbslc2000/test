@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STOMP TEST</title>
+<!--    <link rel="stylesheet" href="/static/css/style.css">-->
+</head>
+<body>
+    <h1>STOMP TEST</h1>
+
+    <h2>WebSocket Test</h2>
+    <div>
+        <input placeholder="Enter the WS Connect Link" id="websocket_url" value="http://localhost:8080/ws"/>
+        <button id="connect-btn">Connect</button>
+        <div>Connected : <span id="connected"></span></div>
+    </div>
+    <div>
+        <input placeholder="subscribe link" id="subscribe-url"/>
+        <button id="subscribe-btn">Subscribe</button>
+        <div>
+            subscribe list:
+            <ul id="subscirbe-list">
+            </ul>
+        </div>
+
+    </div>
+    <div>
+        <input id='send-url' placeholder="Enter the url"/>
+        <textarea id="send-body"></textarea>
+        <button id="send-btn">Send</button>
+    </div>
+    <div>
+        <div>result</div>
+        <div id="response"> </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js" integrity="sha512-1QvjE7BtotQjkq8PxLeF6P46gEpBRXuskzIVgjFpekzFVF4yjRgrQvTG1MTOJ3yQgvTteKAcO7DSZI92+u/yZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js" integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
